@@ -64,14 +64,14 @@ main {
 
 .form-container {
     display:flex;
-    height:65%;
+    height:60%;
     width:100%;
     padding:2rem 2rem;
     margin-bottom:2rem;
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .form-container p {
@@ -81,13 +81,20 @@ main {
 
 
 form {
-    height:50%;
+    height:60%;
+}
+
+input:focus {
+    outline:none !important;
+    border:2px solid blue;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5)
 }
 
 
 form input {
     padding:2px;
     border-radius:5px;
+    font-size:1rem;
     border:1px solid #D6D9DC;
 }
 
@@ -123,25 +130,36 @@ fieldset {
     flex-direction: column;
     justify-content: space-around;
     width:80%;
-    height:40%;
+    height:35%;
 }
 
 .button {
-    padding-left:16px;
+    padding-left:24px;
+    display:flex;
+    flex-direction: column;
+    font-size:1.4rem;
+    justify-content: space-around;
+    gap:30px;
 }
 
 button {
     display:flex;
+    width: 220px;
     flex-direction: column;
     margin-top: 12px;
     padding: 6px 24px;
     background-color: #596D48;
     border-radius:12px;
     color:white;
-    font-size:1.2rem;
+    font-size:1.4rem;
+    box-shadow:0 0 5px #333;
 }
 
 .button a {
     text-decoration: none;
     color: #596D48;
+}
+
+.button p {
+    margin-left:2px;
 }
