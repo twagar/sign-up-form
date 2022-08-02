@@ -30,7 +30,7 @@ body {
 }
 
 .splash-img {
-    background-image: url(splash.jpg);
+    background-image: url(./assets/splash.jpg);
     background-size:cover;
     width: 45%;
     height:100%;
